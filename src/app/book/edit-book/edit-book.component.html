@@ -1,0 +1,9 @@
+<h1>Edit book</h1>
+<a routerLink="" href="#">Back To List</a>
+<form #editForm='ngForm'>
+  <p>name</p><span> <input name="name" type="text" [(ngModel)]="book.name" ></span><br>
+  <p>author</p><span><input type="text" name="author" [(ngModel)]="book.author"></span><br>
+  <p>description</p><span><input name="description" type="text" [(ngModel)]="book.description"></span><br>
+  <br>
+  <button type="submit" (click)="editBook(editForm)" >Edit</button>
+</form>
